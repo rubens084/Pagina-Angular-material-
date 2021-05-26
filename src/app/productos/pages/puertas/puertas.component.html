@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <!--  Carrusel -->
+        <mat-carousel timings="250ms ease-in" [autoplay]="true" color="accent" maxWidth="auto" [loop]="true" [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false" orientation="ltr">
+            <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
+        </mat-carousel>
+
+        <!-- <img [src]="url" class="w3-image" alt="soldador" width="1600" height="800"> -->
+
+        <!--  Carrusel -->
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge">Le Catering</h1>
+        </div>
+    </header>
+
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+
+                <img [src]="img1" class="w3-round w3-image w3-opacity-min" alt="imagen-1" width="600" height="750">
+            </div>
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">Cosina de Erreria</h1><br>
+                <h5 class="w3-center">Tradicional Modelo 1964</h5>
+                <p class="w3-large">
+                    Tu cocina es un lugar muy importante en tu casa, hazlo más cálido y funcional con esta cocina integral Marruecos y ¡que todos disfruten tus deliciosas creaciones culinarias! Cuenta con ocho puertas con espacios para colocar desde alimentos, hasta utensilios.
+                    Cuenta con tarja doble con mezcladora y jaladeras metálicas. Su fabricación en madera de pino te brinda durabilidad y resistencia, mientras
+                    <span class="w3-tag w3-light-grey">*Materiales:*</span> Granito y Acero.</p>
+                <p class="w3-large w3-text-grey w3-hide-medium">que los tableros son de madera industrializada. Su tono en color chocolate y capuccino le dan el toque moderno que tu espacio tanto necesita. Agrégala y haz de tu hogar el más lindo. *Los abonos quincenales, el plazo del crédito y el pago
+                    inicial, pueden variar según el margen de crédito y el historial de pago de cada cliente.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+
+                <img [src]="img1" class="w3-round w3-image w3-opacity-min" alt="imagen-1" width="600" height="750">
+            </div>
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">Cosina de Erreria</h1><br>
+                <h5 class="w3-center">Tradicional Modelo 1964</h5>
+                <p class="w3-large">
+                    Tu cocina es un lugar muy importante en tu casa, hazlo más cálido y funcional con esta cocina integral Marruecos y ¡que todos disfruten tus deliciosas creaciones culinarias! Cuenta con ocho puertas con espacios para colocar desde alimentos, hasta utensilios.
+                    Cuenta con tarja doble con mezcladora y jaladeras metálicas. Su fabricación en madera de pino te brinda durabilidad y resistencia, mientras
+                    <span class="w3-tag w3-light-grey">*Materiales:*</span> Granito y Acero.</p>
+                <p class="w3-large w3-text-grey w3-hide-medium">que los tableros son de madera industrializada. Su tono en color chocolate y capuccino le dan el toque moderno que tu espacio tanto necesita. Agrégala y haz de tu hogar el más lindo. *Los abonos quincenales, el plazo del crédito y el pago
+                    inicial, pueden variar según el margen de crédito y el historial de pago de cada cliente.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+            <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+                <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+</body>
+
+</html>

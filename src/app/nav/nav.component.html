@@ -1,0 +1,23 @@
+<mat-sidenav-container>
+
+    <mat-sidenav-content>
+        <div>
+            <mat-toolbar class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+                <a routerLink="/productos/puertas" class="w3-bar-item w3-button">Aceros-Arnold</a>
+                <div class="w3-right w3-hide-small">
+                    <a routerLink="/nosotros/clientes" class="w3-bar-item w3-button">Servicios</a>
+                    <a routerLink="/contacto/contacto" class="w3-bar-item w3-button">Contactos</a>
+                    <a routerLink="/blog/blog" class="w3-bar-item w3-button">Blog</a>
+                    <img [src]="logo" class="logo">
+                </div>
+            </mat-toolbar>
+        </div>
+        <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+            <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+
+            </div>
+        </header>
+        <!-- Add Content Here -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
